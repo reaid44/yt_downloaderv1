@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Video Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Downloader</h1>
+        <form action="/" method="POST">
+            <input type="text" name="url" placeholder="Enter YouTube Video URL" required>
+            <button type="submit">Get Video Info</button>
+        </form>
+        <footer>
+            <img src="https://raw.githubusercontent.com/yt-dlp/yt-dlp/master/.github/banner.svg" alt="yt-dlp Logo">
+            <p>Powered by<a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a></p>
+          </footer>
+    </div>
+</body>
+</html>
